@@ -1,0 +1,1 @@
+- solarized dark color schema: prism/themes/prism-solarizedlight.css

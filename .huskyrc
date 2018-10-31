@@ -1,0 +1,12 @@
+{
+  "hooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+  },
+  "lint-staged": {
+    "**/*.{js,json,scss,vue}": [
+      "prettier-eslint --eslint-config-path \".eslintrc.js\" --write \"*.js\" \"*.md\" \"*.json\" \"docs/**/*.md}\" \"docs/.vuepress/config.js\" \"src/**/*.{js,vue,scss,md}\"",
+      "git add"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+language: node_js
+cache: npm
+
+branches:
+  only:
+  - master
+
+script:
+- npm run build
+
+after_success:
+- npm run docs
+- npm run test:coverage

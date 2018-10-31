@@ -1,0 +1,4 @@
+{
+  "toast": "./src/components/toast/index.js",
+  "tab-load": "./src/components/tab-load/index.js"
+}

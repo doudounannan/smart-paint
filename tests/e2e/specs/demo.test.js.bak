@@ -1,0 +1,11 @@
+const $$ = require('../constant');
+
+module.exports = {
+  'Demo test': function(browser) {
+    browser
+      .url('https://www.baidu.com')
+      .waitForElementVisible('body', 5000)
+      .saveScreenshot(`${$$.screenshots.path}/test.png`)
+      .end();
+  }
+};

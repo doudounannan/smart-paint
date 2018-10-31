@@ -1,0 +1,29 @@
+@import "../../../assets/scss/common/var";
+
+.#{$nameSpace}-toast {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  background: rgba(0, 0, 0, 0.8);
+
+  color: #fff;
+
+  border-radius: 5px;
+
+  padding: 5px 10px;
+
+  animation: fade-out 1s linear 1s 1 forwards;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
